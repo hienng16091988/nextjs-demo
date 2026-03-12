@@ -1,0 +1,13 @@
+
+services:
+
+  nextjs-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    restart: always  
+    container_name: nextjs-demo
+    ports:
+      - "4000:3000"
+
